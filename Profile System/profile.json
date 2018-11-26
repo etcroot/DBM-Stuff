@@ -1,0 +1,316 @@
+{
+  "name": "profile",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "oyXNN",
+  "actions": [
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "20",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "text": "${serverVars(\"title\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "titlenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"name\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "namenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"age\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "agenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"work\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "worknotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"link\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "websitenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"hobby\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "hobbynotset",
+      "name": "Replace Text"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "cavi",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "cusername",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"cusername\")}",
+      "color": "36393F",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "${tempVars(\"cavi\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "profile1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "message": "Use `${server.tag}help profile` to set profile fields.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Name:",
+      "message": "${tempVars(\"namenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Title:",
+      "message": "${tempVars(\"titlenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Age:",
+      "message": "${tempVars(\"agenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Work Title:",
+      "message": "${tempVars(\"worknotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Website:",
+      "message": "${tempVars(\"websitenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "fieldName": "Hobby:",
+      "message": "${tempVars(\"hobbynotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "text": "${serverVars(\"title\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "titlenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"name\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "namenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"age\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "agenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"work\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "worknotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"link\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "websitenotset",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${serverVars(\"hobby\")}",
+      "text2": "undefined",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "hobbynotset",
+      "name": "Replace Text"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mavi",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "musername",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"musername\")}",
+      "color": "36393F",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "${tempVars(\"mavi\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "profile2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "message": "Use `${server.tag}help profile` to set profile fields.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Name:",
+      "message": "${tempVars(\"namenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Title:",
+      "message": "${tempVars(\"titlenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Age:",
+      "message": "${tempVars(\"agenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Work Title:",
+      "message": "${tempVars(\"worknotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Website:",
+      "message": "${tempVars(\"websitenotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "fieldName": "Hobby:",
+      "message": "${tempVars(\"hobbynotset\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "profile2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ]
+}
