@@ -7,7 +7,7 @@
     {
       "info": "1",
       "infoIndex": "1",
-      "storage": "2",
+      "storage": "1",
       "varName": "link",
       "name": "Store Command Params"
     },
@@ -24,7 +24,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Provide a website to set.",
+      "message": "<:what:516475842734587914> | Provide a website to set.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
@@ -33,14 +33,17 @@
       "name": "End Action Sequence"
     },
     {
-      "storage": "2",
-      "varName": "link",
-      "name": "Save Variable"
+      "member": "1",
+      "varName": "",
+      "dataName": "website",
+      "changeType": "0",
+      "value": "tempVars(\"link\")",
+      "name": "Control Member Data"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "Successfully set your website to: `${serverVars(\"link\")}`",
+      "message": "Successfully set your website to: `${tempVars(\"link\")}`",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
