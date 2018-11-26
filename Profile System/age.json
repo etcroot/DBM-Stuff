@@ -24,7 +24,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "<:what:516475842734587914> | Provide a age to set.",
+      "message": "Provide a age to set.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
@@ -46,7 +46,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "<:what:516475842734587914> | Only use numeric characters as age.",
+      "message": "Only use numeric characters as age.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
