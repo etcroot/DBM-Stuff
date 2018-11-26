@@ -1,4 +1,4 @@
-# Profile System
+# ETCROOT's Profile System
 
 You might need to change a few actions that contains the ${server.tag} prefix variable.
 
