@@ -7,7 +7,7 @@
     {
       "info": "1",
       "infoIndex": "1",
-      "storage": "2",
+      "storage": "1",
       "varName": "age",
       "name": "Store Command Params"
     },
@@ -24,7 +24,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Provide a age to set.",
+      "message": "<:what:516475842734587914> | Provide a age to set.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
@@ -33,7 +33,7 @@
       "name": "End Action Sequence"
     },
     {
-      "storage": "2",
+      "storage": "1",
       "varName": "age",
       "comparison": "6",
       "value": "^[0-9]+$",
@@ -46,7 +46,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Only use numeric characters as age.",
+      "message": "<:what:516475842734587914> | Only use numeric characters as age.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
@@ -55,14 +55,17 @@
       "name": "End Action Sequence"
     },
     {
-      "storage": "2",
-      "varName": "age",
-      "name": "Save Variable"
+      "member": "1",
+      "varName": "",
+      "dataName": "age",
+      "changeType": "0",
+      "value": "tempVars(\"age\")",
+      "name": "Control Member Data"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "Successfully set your age to: `${serverVars(\"age\")}`",
+      "message": "Successfully set your age to: `${tempVars(\"age\")}`",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
