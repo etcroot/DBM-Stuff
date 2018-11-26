@@ -9,64 +9,10 @@
       "comparison": "0",
       "value": "1",
       "iftrue": "2",
-      "iftrueVal": "20",
+      "iftrueVal": "26",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Parameters"
-    },
-    {
-      "text": "${serverVars(\"title\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "titlenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"name\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "namenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"age\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "agenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"work\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "worknotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"link\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "websitenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"hobby\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "hobbynotset",
-      "name": "Replace Text"
     },
     {
       "member": "1",
@@ -83,6 +29,114 @@
       "storage": "1",
       "varName2": "cusername",
       "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "title",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "titledata",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "name",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "namedata",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "age",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "agedata",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "work",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "workdata",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "website",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "websitedata",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "hobby",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "hobbydata",
+      "name": "Store Member Data"
+    },
+    {
+      "text": "${tempVars(\"titledata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "titlesetdata",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"namedata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "namesetdata",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"agedata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "agesetdata",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"workdata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "worksetdata",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"websitedata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "websitesetdata",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"hobbydata\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "hobbysetdata",
+      "name": "Replace Text"
     },
     {
       "title": "",
@@ -107,7 +161,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Name:",
-      "message": "${tempVars(\"namenotset\")}",
+      "message": "${tempVars(\"namesetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -115,7 +169,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Title:",
-      "message": "${tempVars(\"titlenotset\")}",
+      "message": "${tempVars(\"titlesetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -123,7 +177,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Age:",
-      "message": "${tempVars(\"agenotset\")}",
+      "message": "${tempVars(\"agesetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -131,7 +185,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Work Title:",
-      "message": "${tempVars(\"worknotset\")}",
+      "message": "${tempVars(\"worksetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -139,7 +193,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Website:",
-      "message": "${tempVars(\"websitenotset\")}",
+      "message": "${tempVars(\"websitesetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -147,7 +201,7 @@
       "storage": "1",
       "varName": "profile1",
       "fieldName": "Hobby:",
-      "message": "${tempVars(\"hobbynotset\")}",
+      "message": "${tempVars(\"hobbysetdata\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -164,60 +218,6 @@
       "name": "End Action Sequence"
     },
     {
-      "text": "${serverVars(\"title\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "titlenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"name\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "namenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"age\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "agenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"work\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "worknotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"link\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "websitenotset",
-      "name": "Replace Text"
-    },
-    {
-      "text": "${serverVars(\"hobby\")}",
-      "text2": "undefined",
-      "text3": "Not Set",
-      "info": "1",
-      "storage": "1",
-      "varName": "hobbynotset",
-      "name": "Replace Text"
-    },
-    {
       "member": "0",
       "varName": "",
       "info": "16",
@@ -232,6 +232,114 @@
       "storage": "1",
       "varName2": "musername",
       "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "title",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "titledata1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "name",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "namedata1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "age",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "agedata1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "work",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "workdata1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "website",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "websitedata1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "hobby",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "hobbydata1",
+      "name": "Store Member Data"
+    },
+    {
+      "text": "${tempVars(\"titledata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "titlenotset1",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"namedata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "namenotset1",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"agedata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "agenotset1",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"workdata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "worknotset1",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"websitedata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "websitenotset1",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"hobbydata1\")}",
+      "text2": "0",
+      "text3": "Not Set",
+      "info": "1",
+      "storage": "1",
+      "varName": "hobbynotset1",
+      "name": "Replace Text"
     },
     {
       "title": "",
@@ -256,7 +364,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Name:",
-      "message": "${tempVars(\"namenotset\")}",
+      "message": "${tempVars(\"namenotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -264,7 +372,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Title:",
-      "message": "${tempVars(\"titlenotset\")}",
+      "message": "${tempVars(\"titlenotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -272,7 +380,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Age:",
-      "message": "${tempVars(\"agenotset\")}",
+      "message": "${tempVars(\"agenotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -280,7 +388,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Work Title:",
-      "message": "${tempVars(\"worknotset\")}",
+      "message": "${tempVars(\"worknotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -288,7 +396,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Website:",
-      "message": "${tempVars(\"websitenotset\")}",
+      "message": "${tempVars(\"websitenotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
@@ -296,7 +404,7 @@
       "storage": "1",
       "varName": "profile2",
       "fieldName": "Hobby:",
-      "message": "${tempVars(\"hobbynotset\")}",
+      "message": "${tempVars(\"hobbynotset1\")}",
       "inline": "0",
       "name": "Add Embed Field"
     },
