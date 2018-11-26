@@ -7,7 +7,7 @@
     {
       "info": "1",
       "infoIndex": "1",
-      "storage": "2",
+      "storage": "1",
       "varName": "hobby",
       "name": "Store Command Params"
     },
@@ -24,7 +24,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Provide a hobby to set.",
+      "message": "<:what:516475842734587914> | Provide a hobby to set.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
@@ -33,14 +33,17 @@
       "name": "End Action Sequence"
     },
     {
-      "storage": "2",
-      "varName": "hobby",
-      "name": "Save Variable"
+      "member": "1",
+      "varName": "",
+      "dataName": "hobby",
+      "changeType": "0",
+      "value": "tempVars(\"hobby\")",
+      "name": "Control Member Data"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "Successfully set your hobby to: `${serverVars(\"hobby\")}`",
+      "message": "Successfully set your hobby to: `${tempVars(\"hobby\")}`",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
