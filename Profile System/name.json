@@ -24,7 +24,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "<:what:516475842734587914> | Provide a name to set.",
+      "message": "Provide a name to set.",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"
